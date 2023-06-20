@@ -52,7 +52,7 @@
   // echo var_dump($hotels);
   
   
-  echo "<table class='table'><thead><tr>";
+  echo "<table class='table text-center'><thead><tr>";
   foreach ($hotels[0] as $key => $value) {
     echo "<th scope='col'>" . $key . "</th>";
   };
@@ -61,12 +61,13 @@
   echo "<tbody>";
 
   foreach ($hotels as $hotel) {
-    echo "<tr>"
+    echo "<tr>";
+
     foreach ($hotel as $value) {
-      var_dump($value); 
       echo "<td>" . $value . "</td>";
     };
-    echo "</tr>"
+
+    echo "</tr>";
   };
 
   
@@ -74,35 +75,7 @@
 
   echo "<br /> <br />";
 
-
-
-
-
-
-
-
-  
   ?>
-  <table class="table">
-
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-  </tbody>
-</table>
-  
 
   </body>
 </html>
